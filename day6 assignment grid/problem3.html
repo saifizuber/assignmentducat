@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Problem 2</title>
+
+    <style>
+        #box{
+            padding: 40px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,130px);
+            grid-template-areas: 
+            "A A B E"
+            "C D B E";
+            gap: 15px;
+
+        }
+        #box>div{
+            padding: 30px;
+            border-radius: 10px;
+            font-size: 50px;
+            
+        }
+        #box>div:nth-child(1){
+            background-color: rgb(69, 66, 66);
+            grid-area: A;
+        }
+        #box>div:nth-child(2){
+            background-color: rgb(69, 66, 66);
+            grid-area: B;
+        }
+        #box>div:nth-child(3){
+            background-color: rgb(69, 66, 66);
+            grid-area: C;
+        }
+        #box>div:nth-child(4){
+            background-color: rgb(69, 66, 66);
+            grid-area: D;
+        }
+        #box>div:nth-child(5){
+            background-color: rgb(69, 66, 66);
+            grid-area: E;
+            height: 250px;
+        }
+
+        
+
+    </style>
+    
+</head>
+<body>
+    <div id="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Problem 2</title>
+
+    <style>
+        #box {
+            padding: 40px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 130px);
+            grid-template-areas:
+                "A B B C"
+                "D D E F"
+                "G H I I";
+            grid-gap: 40px 50px;
+
+        }
+
+        #box>div {
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        #box>div:nth-child(1) {
+            background-color: rgb(13, 107, 96);
+            grid-area: A;
+        }
+
+        #box>div:nth-child(2) {
+            background-color: rgb(13, 107, 96);
+            grid-area: B;
+        }
+
+        #box>div:nth-child(3) {
+            background-color: rgb(13, 107, 96);
+            grid-area: C;
+        }
+
+        #box>div:nth-child(4) {
+            background-color: rgb(13, 107, 96);
+            grid-area: D;
+        }
+
+        #box>div:nth-child(5) {
+            background-color: rgb(13, 107, 96);
+            grid-area: E;
+        }
+
+        #box>div:nth-child(6) {
+            background-color: rgb(13, 107, 96);
+            grid-area: F;
+        }
+
+        #box>div:nth-child(7) {
+            background-color: rgb(13, 107, 96);
+            grid-area: G;
+        }
+
+        #box>div:nth-child(8) {
+            background-color: rgb(13, 107, 96);
+            grid-area: H;
+        }
+
+        #box>div:nth-child(9) {
+            background-color: rgb(13, 107, 96);
+            grid-area: I;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </div>
+</body>
+
+</html>
