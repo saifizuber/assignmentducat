@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>problem 6</title>
+    <style>
+        
+        *{
+            text-align: center;
+        }
+        
+
+        #box{   
+            margin: auto;
+            padding: 30px;
+            width: 20%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,50px);
+            grid-template-areas:
+            "input input input input"
+            "num1 num2 num3 num4"
+            "num5 num6 num7 num8"
+            "num9 num10 num11 num12"
+            "num13 num14 num15 num16"            ;
+            gap: 10px;
+            box-shadow: 4px 4px 4px 5px  rgb(193, 191, 191);
+        }
+        #box>input:nth-child(1){
+            background-color: white;
+            grid-area: input;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px 4px  rgb(193, 191, 191);
+            border: none;
+        }
+        #box>button:nth-child(2){
+            background-color: white;
+            grid-area: num1;
+        }
+        #box>button:nth-child(3){
+            background-color: white;
+            grid-area: num2;
+        }
+        #box>button:nth-child(4){
+            background-color: white;
+            grid-area: num3;
+        }
+        #box>button:nth-child(5){
+            background-color: black;
+            grid-area: num4;
+            color: white;
+        }
+        #box>button:nth-child(6){
+            background-color: white;
+            grid-area: num5;
+        }
+        #box>button:nth-child(7){
+            background-color: white;
+            grid-area: num6;
+        }
+        #box>button:nth-child(8){
+            background-color:  white;
+            grid-area: num7;
+        }
+        #box>button:nth-child(9){
+            background-color: black;
+            grid-area: num8;
+            color: white;
+        }
+        #box>button:nth-child(10){
+            background-color: white;
+            grid-area: num9;
+        }
+        #box>button:nth-child(11){
+            background-color: white;
+            grid-area: num10;
+        }
+        #box>button:nth-child(12){
+            background-color: white;
+            grid-area: num11;
+        }
+        #box>button:nth-child(13){
+            background-color: black;
+            grid-area: num12;
+            color: white;
+        }
+        #box>button:nth-child(14){
+            background-color: red;
+            grid-area: num13;
+        }
+        #box>button:nth-child(15){
+            background-color: white;
+            grid-area: num14;
+        }
+        #box>button:nth-child(16){
+            background-color: black;
+            grid-area: num15;
+            color: white;
+        }
+        #box>button:nth-child(17){
+            background-color: black;
+            grid-area: num16;
+            color: white;
+        }
+
+            
+        #box>button{
+            border-radius: 10px;
+            border: none;
+            box-shadow: 4px 4px 4px 4px  rgb(193, 191, 191);
+
+
+        }
+
+    </style>
+</head>
+<body>
+        <h1>Ducat Calculator</h1>
+
+        <div id="box">
+            <input type="text">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>X</button>
+            <button>C</button>
+            <button>0</button>
+            <button>=</button>
+            <button>/</button>
+        </div>
+    
+</body>
+</html>
