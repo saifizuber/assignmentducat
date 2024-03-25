@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 2</title>
+    <style>
+        #box1{
+            width: 65%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        
+        #box1>h1{
+            color: rgb(243, 221, 96);
+            font-size: 60px;
+            margin: 0px;
+        }
+        #box1>p{
+            font-size: 18px;
+            font-weight: 550;
+        }
+        #box2{
+            width: 65%;
+            margin: 10px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            
+        }
+        #box2>.image{
+            text-align: center;
+        }
+        .image>img{
+            width: 100%;
+        }
+        .image>p{
+            color: rgb(243, 221, 96);
+            font-weight: 400;
+            font-size: 18px;
+        }
+        .image>h1{
+            font-weight: 300;
+        }
+        @media all and (min-width:450px) and (max-width:850px){
+            #box1>h1{
+                font-size: 32px;
+            }
+            #box2{
+                padding: 10px;
+                flex-wrap: wrap;
+                gap: 1px;
+            }
+            
+            #box2>.image{
+                width: 45%;
+            }
+
+        }
+        @media all and (min-width:80px) and (max-width:449px){
+            #box1>h1{
+                font-size: 30px;
+            }
+            #box2{
+                flex-wrap: wrap;
+            }
+            
+            #box2>.image{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <h1>Rooms & Suites</h1>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+    </div>
+    <div id="box2">
+        <div class="image">
+            <img src="https://preview.colorlib.com/theme/sogo/images/img_1.jpg" alt="">
+            <h1>Single Room</h1>
+            <p>90$ PER NIGHT</p>
+        </div>
+        <div class="image">
+            <img src="https://preview.colorlib.com/theme/sogo/images/img_2.jpg" alt="">
+            <h1>Family Room</h1>
+            <p>120$ PER NIGHT</p>
+        </div>
+        <div class="image">
+            <img src="https://preview.colorlib.com/theme/sogo/images/img_3.jpg" alt="">
+            <h1>Presidential Room</h1>
+            <p>120$ PER NIGHT</p>
+        </div>
+    </div>
+</body>
+</html>
