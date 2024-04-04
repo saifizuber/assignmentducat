@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 7vh;
+        }
+
+        body {
+            width: 90vw;
+            margin: 20px auto;
+        }
+
+        #main {
+            display: grid;
+            grid-auto-rows: minmax(150px, auto);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+                'nav nav nav'
+                'lft lft rgt1'
+                'lft lft rgt2'
+                'lft lft rgt3';
+            gap: 20px;
+        }
+
+        #main>div:nth-child(1) {
+            grid-area: nav;
+            background-color: yellow;
+        }
+
+        #main>div:nth-child(2) {
+            grid-area: lft;
+            background-color: red;
+            margin-right: 20px;
+        }
+
+        #main>div:nth-child(3) {
+            grid-area: rgt1;
+            background-color: green;
+        }
+
+        #main>div:nth-child(4) {
+            grid-area: rgt2;
+            background-color: green;
+
+
+        }
+
+        #main>div:nth-child(5) {
+            grid-area: rgt3;
+            background-color: green;
+
+
+        }
+
+        @media all and (min-width:451px) and (max-width:850px) {
+            * {
+                font-size: 20px;
+            }
+
+            #main {
+
+                grid-template-areas:
+                    'nav nav nav'
+                    'lft lft lft'
+                    'lft lft lft'
+                    'rgt1 rgt2 rgt3';
+                gap: 10px;
+            }
+
+            #main>div:nth-child(2) {
+
+                margin-right: 0px;
+            }
+
+        }
+
+        @media all and (min-width:80px) and (max-width:450px) {
+            #main {
+                grid-template-areas:
+                    'nav nav nav'
+                    'lft lft lft '
+                    'lft lft lft'
+                    'rgt1 rgt1 rgt1'
+                    'rgt2 rgt2 rgt2'
+                    'rgt3 rgt3 rgt3';
+                gap: 15px;
+            }
+
+            #main>div:nth-child(2) {
+
+                margin-right: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div>Navigation</div>
+        <div>LEFT BOX</div>
+        <div>RIGHT BOX 1</div>
+        <div>RIGHT BOX 2</div>
+        <div>RIGHT BOX 3</div>
+    </div>
+</body>
+
+</html>
